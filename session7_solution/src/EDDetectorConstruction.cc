@@ -5,8 +5,9 @@
 // the ultra-stupid units
 const G4double EDDetectorConstruction::inch = 25.4; // 1 inch = 25.4 mm
 
-// G4double layer_1_Y_offset = 0.29142500;// note : data run 52 U8
-// const G4double Vertical_rotation_angle_offset = 0.09809 * deg; // note : data run52 U8 slope offset
+// G4double layer_1_Y_offset = 0.29142500;// note : data run 52 U8 (2023_06_28, I actually don't remeber why the value is 0.291425)
+G4double layer_1_Y_offset = 0.2975;// note : data run 52 U8 (new value assigned, you can check the note on the Notion)
+const G4double Vertical_rotation_angle_offset = 0.09809 * deg; // note : data run52 U8 slope offset
 
 // G4double layer_1_Y_offset = 0.26501400;// note : data run 52 U9
 // const G4double Vertical_rotation_angle_offset = 0.0??0 * deg; // note : data run52 U9 slope offset
@@ -24,8 +25,8 @@ const G4double EDDetectorConstruction::inch = 25.4; // 1 inch = 25.4 mm
 // G4double layer_1_Y_offset = 2.85321e-01;// note : for run61
 // const G4double Vertical_rotation_angle_offset = 0 * deg; // note : for run61
 
-G4double layer_1_Y_offset = 38.0;// note : test
-const G4double Vertical_rotation_angle_offset = 0 * deg; // note : test
+// G4double layer_1_Y_offset = 0.;// note : test
+// const G4double Vertical_rotation_angle_offset = 0 * deg; // note : test
 
 EDDetectorConstruction::EDDetectorConstruction( INTTMessenger* INTT_mess )
   : G4VUserDetectorConstruction(),

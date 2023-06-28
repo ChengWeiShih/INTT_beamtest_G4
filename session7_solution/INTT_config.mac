@@ -82,8 +82,12 @@
 #/INTT/geom/setDarkboxOffsetY 3 
 
 ## for run89 ###
-/INTT/geom/setDarkboxOffsetX 8
-/INTT/geom/setDarkboxOffsetY 4
+#/INTT/geom/setDarkboxOffsetX 8
+#/INTT/geom/setDarkboxOffsetY 4
+
+## for run52 ###
+/INTT/geom/setDarkboxOffsetX 0
+/INTT/geom/setDarkboxOffsetY -5
 
 #---------------------------------------------------------------------------
 # Offset of the trigger1, 2, 3 (most upstream) in vertical and horizontal directions in mm

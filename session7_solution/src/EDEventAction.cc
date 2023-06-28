@@ -157,7 +157,8 @@ void EDEventAction::EndOfEventAction(const G4Event* event)
   for( int i=0; i<camac_edeps_MC_.size()-1; i++ ){ // the last element in camac_edeps_MC_ is the mini sci., i.e. not trigger
     
     // typically, the energy deposit should be larger than 0.5 MeV. The case of the thin sci. not implemented yet
-    if( camac_edeps_MC_[i] < -0.5 * MeV ){
+    // todo : here is the place to set the trigger cut (-0.5 * MeV or 0.5 * MeV)
+    if( camac_edeps_MC_[i] < 0.5 * MeV ){
       trigger_flag = false;
       break;
     }

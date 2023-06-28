@@ -72,6 +72,7 @@ G4bool EDEmCalorimeterSD::ProcessHits(G4Step* step,
   //  G4cout << "chamger hit: " << posX << "\t" << posY << "\t" << posZ << "\t" << edep << G4endl;
   // G4String motherPhysical_name_test = motherPhysical->GetName(); // not used anymore 
   
+  // G4cout<<"Sci name test : "<<motherPhysical->GetName()<<G4endl;
 
   HitThisUnit->AddEdep(edep);
 
@@ -148,8 +149,8 @@ void EDEmCalorimeterSD::EndOfEvent(G4HCofThisEvent* /*hce*/)
         analysisManager->FillNtupleDColumn(3, 2, fEdep);  
         analysisManager->AddNtupleRow(3);
         //if ( eID % 10000 == 0)
-	//if( verbose == 2 )
-	if( false )
+        //if( verbose == 2 )
+        if( false )
           {
             G4cout<<" SCI, eID : "<<eID<<" Sci trigger ID : "<<i<<" edep : "<<fEdep<<G4endl;
           }

@@ -47,6 +47,9 @@ void EDPrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
       // // position = G4ThreeVector(0, 0.13*m, -227.5 * mm); // Z : -202.5 * mm is for middle scintillator 
       // position = G4ThreeVector(0, 0.13*m, -202.5 * mm); // Z : -202.5 * mm is for middle scintillator 
       
+      // note : to shoot in the between of the small sci and the first big sci
+      // momentum_vec = G4ThreeVector(0, 0, 1);                                                                                                                                                                      
+      // position = G4ThreeVector(0, 0, -(202.5+10) * mm); // Z : -202.5 * mm is for middle scintillator 
     }
   else
     {
