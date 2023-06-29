@@ -670,7 +670,7 @@ void EDDetectorConstruction::ConstructLadders()
   const G4double kINTT_ladders_center = 0.0;
   //const G4double kGap = 35.0 * mm; // gap betwen ladders, good to use the same parameter for all ladders
   // todo : it was 26.1 mm, try to increase the gap to 26.4 mm (2023_06_29)
-  const G4double kGap = 26.4 * mm; // gap betwen ladders, good to use the same parameter for all ladders
+  const G4double kGap = 26.1 * mm; // gap betwen ladders, good to use the same parameter for all ladders
   const G4double kStave_thickness = kINTT_CFRP_thickness + INTT_CFRP_tube_outer_radius * 2 + kINTT_CFRP_thickness; // flat CFRP thickness + CFRP tube + formed CFRP thickness
 
   // silicon   + silver epoxy glue: 320um + 14um
