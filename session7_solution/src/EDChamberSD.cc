@@ -282,33 +282,33 @@ G4bool EDChamberSD::ProcessHits(G4Step* step,
   // ntuple ID = 2: event_particle
   G4int num = 0;
   // todo : ============================== for the charge sharing study, we need these lines ===================================
-  // analysisManager->FillNtupleIColumn(2, num++, particle_order);                 // note : track -> GetTrackID();
-  // analysisManager->FillNtupleIColumn(2, num++, PDG);                            // note : track->GetDefinition()->GetPDGEncoding();
-  // analysisManager->FillNtupleDColumn(2, num++, secondaryParticleKineticEnergy); // note : track->GetKineticEnergy();
-  // analysisManager->FillNtupleDColumn(2, num++, process_id );                    // note : post_step_point->GetProcessDefinedStep()->GetProcessSubType();
-  // analysisManager->FillNtupleDColumn(2, num++, track_posX);      // note : G4track
-  // analysisManager->FillNtupleDColumn(2, num++, track_posY);      // note : G4track
-  // analysisManager->FillNtupleDColumn(2, num++, track_posZ);      // note : G4track
-  // analysisManager->FillNtupleDColumn(2, num++, theta_in);        // note : pre, theta_in
-  // analysisManager->FillNtupleDColumn(2, num++, theta_out);       // note : post, theta_out
-  // analysisManager->FillNtupleDColumn(2, num++, dtheta);          // note : dtheta, calculated by pre and post, 
-  // analysisManager->FillNtupleDColumn(2, num++, phi_in);          // note : pre, phi_in
-  // analysisManager->FillNtupleDColumn(2, num++, phi_out);         // note : post, phi_out
-  // analysisManager->FillNtupleIColumn(2, num++, volume_test_ID);
-  // analysisManager->FillNtupleIColumn(2, num++, eID_1); // event ID
+  analysisManager->FillNtupleIColumn(2, num++, particle_order);                 // note : track -> GetTrackID();
+  analysisManager->FillNtupleIColumn(2, num++, PDG);                            // note : track->GetDefinition()->GetPDGEncoding();
+  analysisManager->FillNtupleDColumn(2, num++, secondaryParticleKineticEnergy); // note : track->GetKineticEnergy();
+  analysisManager->FillNtupleDColumn(2, num++, process_id );                    // note : post_step_point->GetProcessDefinedStep()->GetProcessSubType();
+  analysisManager->FillNtupleDColumn(2, num++, track_posX);      // note : G4track
+  analysisManager->FillNtupleDColumn(2, num++, track_posY);      // note : G4track
+  analysisManager->FillNtupleDColumn(2, num++, track_posZ);      // note : G4track
+  analysisManager->FillNtupleDColumn(2, num++, theta_in);        // note : pre, theta_in
+  analysisManager->FillNtupleDColumn(2, num++, theta_out);       // note : post, theta_out
+  analysisManager->FillNtupleDColumn(2, num++, dtheta);          // note : dtheta, calculated by pre and post, 
+  analysisManager->FillNtupleDColumn(2, num++, phi_in);          // note : pre, phi_in
+  analysisManager->FillNtupleDColumn(2, num++, phi_out);         // note : post, phi_out
+  analysisManager->FillNtupleIColumn(2, num++, volume_test_ID);
+  analysisManager->FillNtupleIColumn(2, num++, eID_1); // event ID
 
-  // analysisManager->FillNtupleDColumn(2, num++, edep);// note : edep
-  // analysisManager->FillNtupleDColumn(2, num++, touchposition.getX());// note : pre_pos X
-  // analysisManager->FillNtupleDColumn(2, num++, touchposition.getY());// note : pre_pos Y
-  // analysisManager->FillNtupleDColumn(2, num++, touchposition.getZ());// note : pre_pos Z
-  // analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getX());// note : post_pos X
-  // analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getY());// note : post_pos Y
-  // analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getZ());// note : post_pos Z
+  analysisManager->FillNtupleDColumn(2, num++, edep);// note : edep
+  analysisManager->FillNtupleDColumn(2, num++, touchposition.getX());// note : pre_pos X
+  analysisManager->FillNtupleDColumn(2, num++, touchposition.getY());// note : pre_pos Y
+  analysisManager->FillNtupleDColumn(2, num++, touchposition.getZ());// note : pre_pos Z
+  analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getX());// note : post_pos X
+  analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getY());// note : post_pos Y
+  analysisManager->FillNtupleDColumn(2, num++, the_post_step_position.getZ());// note : post_pos Z
 
-  // analysisManager->FillNtupleIColumn(2, num++, process_ID_pre);  // note : pre step process name
-  // analysisManager->FillNtupleIColumn(2, num++, process_ID_post); // note : post step process name
+  analysisManager->FillNtupleIColumn(2, num++, process_ID_pre);  // note : pre step process name
+  analysisManager->FillNtupleIColumn(2, num++, process_ID_post); // note : post step process name
 
-  // analysisManager->AddNtupleRow(2);
+  analysisManager->AddNtupleRow(2);
 
   // todo : ============================== for the charge sharing study, we need these lines ===================================
 
